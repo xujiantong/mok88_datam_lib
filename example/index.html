@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mok88 datav libs example</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.2/dist/vue.global.js"></script>
+    <script src="../dist/mok88.datam.lib.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{message2}}
+        <test-component></test-component>
+    </div>
+    <script>
+        Vue.createApp({
+            setup(){
+                var message2 = 'hello lib';
+                return {
+                    message2
+                }
+            }
+        }).use(mok88DatamLib).mount('#app')
+    </script>
+</body>
+</html>
